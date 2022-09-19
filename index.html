@@ -1,0 +1,98 @@
+  <html>
+<head>
+<meta charset="utf-8">
+
+<title>
+    Projeto 1
+</title>
+
+<meta name="viewport" content="width=device-width, inicial-scale=1">
+
+<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+    
+<div class="header">
+
+        <a href="index.html"><img alt="Foto de perfil" src="../projeto1/media/perfil.jpeg"> Leonardo Macena</a>
+        <div class="navbar">
+            <button class="links" onclick="abrir(event, 'Leonardo Gabriel de Macena Rodrigues')">Biografia</button>
+            <button class="links" onclick="abrir(event, 'Formações')">Formações</button>
+            <button class="links" onclick="abrir(event, 'Contato')">Contato</button>
+      </div>
+      </div>
+      
+        <div id="Leonardo Gabriel de Macena Rodrigues" class="conteudo">
+            
+          <h2><b><u><p>Leonardo Gabriel de Macena Rodrigues</p></u></b></h2>
+            
+            <h4><p>Nascido aos 23 dias do mês Junho no ano de 1995, na cidade do Rio de Janeiro.</p>
+            <p>Desde a infância tem como objetivo obter mais conhecimentos, e com isso entrou em diversos curso de diversa áreas.
+               Com 10 anos de idade ingressou no curso de inglês pelo CCAA e lá permanceu até seus 16. Com 14/15 anos foi para ensino médio/técnico na FAETEC do Maracanã no curso de eletrotécnina.
+               Aos 18/19 anos entrou no mercado de trabalhando através do programa Jovem Aprendiz na empresa FMC Technologies, onde fez curso de Mecânica de manutenção industrial pelo SENAI com duração de 1 ano, e nesse período decidiu aprimorarseu conhecimentos de AutoCad pelo curso Prepara.</p>
+                
+            <p>Pouco tempo depois do termino de seu primeiro contrato de trabalho, surgiu uma nova oportunidade de Jovem aprendiz na empresa Prime Optical com o curso de Rotinas administrativas pelo SENAC, e simultaneamente fez um outro curso técnico de Mecânica no CEFET do Maracanã.
+            Após o termino do contrato de Aprendiz veio a oportunidade de efetivação, que foi aceita, e assim sua vida profissional teve inicio na prática e permaneceu durante 5 anos até o ano de 2020.</p>
+            <p>Com o inicio da pandemia do Coronavírus, ele decidiu se manter recluso na casa dos avós em uma casa no interior da região metropolitana do Rio de Janeiro, onde se manteve até o ano de 2022, onde conseguiu uma vaga na UFRJ e também uma vaga no curso de programação através do projeto Programadores Cariocas.</p></h4>
+        
+        </div>
+        <div id="Formações" class="conteudo">
+              <h2>Formações</h2>
+                <div class="flex">
+
+                <p><ul>
+                  <p><b><h3>Profissionalizante</h3></b></p>
+                  <li>CCAA - inglês</li>
+                  <li>SENAI - Mecânica de manutenção indutrial</li>
+                  <li>PREPARA - AutoCad</li>
+                  <li>SENAC - Rotinas administrativas</li>
+                  <li>SENAC - Programação Web (cursando)</li>
+                </ul></p>
+
+                <p><ul>
+                  <b><h3><p>Técnica</p></h3></b>
+                  <li>ETEFV - Eletrotécnica</li>
+                  <li>CEFET - Mecânica</li>
+                </ul></p>
+              
+                <p><ul>
+                  <b><h3><p>Acadêmica</p></h3></b>
+                  <li>ETEFV - Ensino médio</li>
+                  <li>UFRJ - Bacharelado em Ciências Biológicas (cursando)</li>
+                </ul></p>
+
+              </div>
+            </div>
+        <div id="Contato" class="conteudo">
+            <h2>Para mais informações entre em contato através dos links</h2>
+
+      <div class="icone">
+        <p><a href="https://github.com/leomacena" class="github">GitHub</a>
+        <a href="https://www.facebook.com/LeeoMacena/" class="facebook">Facebook</a>
+        <a href="mailto:leomacena23@gmail.com" class="email">E-mail</a>
+        <a href="https://www.linkedin.com/in/leonardomacena/" class="linkedin">Linkedin</a>
+        <a href="https://www.instagram.com/leomacena23/" class="instagram">Instagram</a></p> 
+      </div>
+
+          </div>
+
+        <script>
+            function abrir(evt, direcionamento) {
+              var i, conteudo, links;
+              conteudo = document.getElementsByClassName("conteudo");
+              for (i = 0; i < conteudo.length; i++) {
+                conteudo[i].style.display = "none";
+              }
+              links = document.getElementsByClassName("links");
+              for (i = 0; i < links.length; i++) {
+                links[i].className = links[i].className.replace(" active", "");
+              }
+              document.getElementById(direcionamento).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            </script>
+    
+
+</body>
+</html>
