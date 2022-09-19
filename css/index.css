@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body { 
-  background-image: url('../media/fundo1.jpeg');
+  background-image: url('media/fundo1.jpeg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-color: rgb(210, 209, 209);
@@ -168,7 +168,7 @@ height: 50px;
     flex-direction: column;
   }
   body { 
-      background-image: url('../media/fundo2.jpeg');
+      background-image: url('media/fundo2.jpeg');
       background-size: 100% 100%;
       background-color: rgb(210, 209, 209);
       color: white;
