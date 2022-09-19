@@ -3,7 +3,8 @@
 }
 body { 
   background-image: url('../media/fundo1.jpeg');
-  background-size:  100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   background-color: rgb(210, 209, 209);
   color: white;
   margin: 0;
